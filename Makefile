@@ -5,7 +5,7 @@ CFLAGS = -std=c99 -m32
 
 default: myecho
 
-all: myecho myenv isset
+all: myecho myenv isset myexec
 
 myecho: myecho.c
 
@@ -13,7 +13,10 @@ myenv: myenv.c
 
 isset: isset.c
 
+myexec: myexec.c
+
 clean:
 	rm -f myecho
 	rm -f isset
 	rm -f myenv
+	rm -f myexec
